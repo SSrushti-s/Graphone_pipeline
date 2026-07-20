@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.env
+output/*.csv
+output/seen_urls.sqlite3
+logs/*.log
+node_modules/
+gen_architecture_doc.js
