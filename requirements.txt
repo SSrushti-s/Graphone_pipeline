@@ -5,4 +5,4 @@ rapidfuzz==3.9.4
 playwright==1.44.0
 python-dotenv==1.0.1
 lxml>=4.9.0
-bs4==4.12.2
+bs4
