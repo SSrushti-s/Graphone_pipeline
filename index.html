@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphOne Intelligence Graph Pipeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="brand-icon">🧠</span>
+                <span class="brand-text">GraphOne Pipeline</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#sources">Data Sources</a></li>
+                <li><a href="#output">Output</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="https://github.com/SSrushti-s/Graphone_pipeline" target="_blank" class="nav-cta">View on GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">🚀 Production-Ready</div>
+                    <h1>AI/Intelligence Graph</h1>
+                    <h1 class="highlight">Data Pipeline</h1>
+                    <p class="hero-description">
+                        Fault-tolerant ingestion pipeline for the AI and venture ecosystem. 
+                        Scrapes, enriches, and structures data from 10+ sources into a 
+                        unified Intelligence Graph.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#quick-start" class="btn btn-primary">Quick Start →</a>
+                        <a href="https://github.com/SSrushti-s/Graphone_pipeline" target="_blank" class="btn btn-secondary">
+                            <svg class="icon" viewBox="0 0 16 16" width="16" height="16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">1,000+</span>
+                            <span class="stat-label">Research Papers</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1,000+</span>
+                            <span class="stat-label">Startups</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1,000+</span>
+                            <span class="stat-label">Products</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Job Boards</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="visual-title">pipeline.py</span>
+                        </div>
+                        <div class="visual-code">
+                            <span class="code-keyword">async def</span> <span class="code-function">run_pipeline</span>():<br>
+                            &nbsp;&nbsp;<span class="code-comment"># Scrape 5 sources concurrently</span><br>
+                            &nbsp;&nbsp;<span class="code-keyword">await</span> <span class="code-function">scrape_all</span>()<br>
+                            &nbsp;&nbsp;<span class="code-comment"># Enrich with LLM (Gemini → Groq → DeepSeek)</span><br>
+                            &nbsp;&nbsp;<span class="code-keyword">await</span> <span class="code-function">llm_enrich</span>()<br>
+                            &nbsp;&nbsp;<span class="code-comment"># Resolve entities (OpenAI, Inc. → OpenAI)</span><br>
+                            &nbsp;&nbsp;<span class="code-keyword">return</span> canonical_records
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Stats -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-emoji">📊</span>
+                    <div>
+                        <span class="stat-big">6</span>
+                        <span class="stat-desc">Data Verticals</span>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-emoji">🔗</span>
+                    <div>
+                        <span class="stat-big">10+</span>
+                        <span class="stat-desc">Data Sources</span>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-emoji">🤖</span>
+                    <div>
+                        <span class="stat-big">3</span>
+                        <span class="stat-desc">LLM Tiers</span>
+                    </div>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-emoji">⚡</span>
+                    <div>
+                        <span class="stat-big">24h</span>
+                        <span class="stat-desc">Freshness Guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Production-Grade Data Pipeline</h2>
+                <p>Built for scale, fault-tolerance, and data quality</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Massive Bulk Extraction</h3>
+                    <p>Concurrent scraping architecture that scales to 500,000+ records with infrastructure scaling only</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Anti-Bot Navigation</h3>
+                    <p>Playwright-based JS rendering, human-like pacing, and compliant proxy integration for protected sources</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Multi-Tier LLM Fallback</h3>
+                    <p>Gemini → Groq → DeepSeek chain with exponential backoff and jitter for 429/413 handling</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Entity Resolution</h3>
+                    <p>Canonicalizes messy strings (OpenAI, Inc. → OpenAI) using exact, alias, and fuzzy matching</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Freshness Tracking</h3>
+                    <p>SQLite dedupe store with SHA-256 hashing ensuring no duplicate processing across nodes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Dynamic Metrics</h3>
+                    <p>Real-time GitHub star tracking and rigorous ISO-8601 timestamp normalization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Sources Section -->
+    <section id="sources" class="sources">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Data Sources</span>
+                <h2>What We Scrape</h2>
+                <p>Live data from 10+ sources across 5 verticals</p>
+            </div>
+            <div class="sources-grid">
+                <div class="source-group">
+                    <h3>📚 Research Papers</h3>
+                    <ul>
+                        <li><span class="source-badge">API</span> arXiv API</li>
+                        <li><span class="source-badge">API</span> GitHub REST API <span class="source-meta">(stars)</span></li>
+                        <li><span class="source-badge">Pattern</span> Papers with Code <span class="source-meta">(JS-rendered)</span></li>
+                    </ul>
+                </div>
+                <div class="source-group">
+                    <h3>📰 News</h3>
+                    <ul>
+                        <li><span class="source-badge">RSS</span> TechCrunch AI</li>
+                        <li><span class="source-badge">RSS</span> VentureBeat AI</li>
+                        <li><span class="source-badge">RSS</span> Ars Technica</li>
+                        <li><span class="source-badge">RSS</span> The Verge AI</li>
+                        <li><span class="source-badge">RSS</span> MIT Tech Review AI</li>
+                    </ul>
+                </div>
+                <div class="source-group">
+                    <h3>💼 Jobs</h3>
+                    <ul>
+                        <li><span class="source-badge">API</span> Remotive</li>
+                        <li><span class="source-badge">API</span> RemoteOK</li>
+                        <li><span class="source-badge">API</span> Arbeitnow</li>
+                        <li><span class="source-badge">API</span> Jobicy</li>
+                        <li><span class="source-badge">API</span> Wellfound</li>
+                    </ul>
+                </div>
+                <div class="source-group">
+                    <h3>🏢 Startups & Products</h3>
+                    <ul>
+                        <li><span class="source-badge">API</span> Y Combinator</li>
+                        <li><span class="source-badge">Resolution</span> Entity Canonicalization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Output Section -->
+    <section id="output" class="output">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Output</span>
+                <h2>Data Deliverables</h2>
+                <p>Clean, structured data ready for analysis</p>
+            </div>
+            <div class="output-grid">
+                <div class="output-card">
+                    <span class="output-emoji">📄</span>
+                    <h4>Research Papers</h4>
+                    <span class="output-count">1,000+</span>
+                    <span class="output-meta">with GitHub stars</span>
+                </div>
+                <div class="output-card">
+                    <span class="output-emoji">🏢</span>
+                    <h4>Startups</h4>
+                    <span class="output-count">1,000+</span>
+                    <span class="output-meta">canonicalized names</span>
+                </div>
+                <div class="output-card">
+                    <span class="output-emoji">📦</span>
+                    <h4>Products</h4>
+                    <span class="output-count">1,000+</span>
+                    <span class="output-meta">with pricing models</span>
+                </div>
+                <div class="output-card">
+                    <span class="output-emoji">💼</span>
+                    <h4>Jobs</h4>
+                    <span class="output-count">24h Fresh</span>
+                    <span class="output-meta">from 5 boards</span>
+                </div>
+                <div class="output-card">
+                    <span class="output-emoji">📰</span>
+                    <h4>News</h4>
+                    <span class="output-count">24h Fresh</span>
+                    <span class="output-meta">with LLM summaries</span>
+                </div>
+                <div class="output-card">
+                    <span class="output-emoji">🔗</span>
+                    <h4>Entity Mapping</h4>
+                    <span class="output-count">Raw → Canonical</span>
+                    <span class="output-meta">tracking log</span>
+                </div>
+            </div>
+            <div class="output-cta">
+                <a href="https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit?usp=sharing" target="_blank" class="btn btn-primary">
+                    📊 View Full Data on Google Sheets →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Design</span>
+                <h2>System Architecture</h2>
+                <p>Six-phase pipeline designed for production</p>
+            </div>
+            <div class="architecture-flow">
+                <div class="flow-step">
+                    <span class="flow-number">01</span>
+                    <h4>Phase I</h4>
+                    <p>Massive Bulk Extraction<br><small>arXiv, YC, GitHub</small></p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <span class="flow-number">02</span>
+                    <h4>Phase II</h4>
+                    <p>Signal Ingestion<br><small>5 News + 5 Job Boards</small></p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <span class="flow-number">03</span>
+                    <h4>Phase III</h4>
+                    <p>LLM Extraction<br><small>Gemini → Groq → DeepSeek</small></p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <span class="flow-number">04</span>
+                    <h4>Phase IV</h4>
+                    <p>Entity Resolution<br><small>Canonicalization</small></p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <span class="flow-number">05</span>
+                    <h4>Phase V</h4>
+                    <p>Anti-Bot<br><small>Playwright + Proxies</small></p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <span class="flow-number">06</span>
+                    <h4>Phase VI</h4>
+                    <p>Production Design<br><small>Scalable, Fault-Tolerant</small></p>
+                </div>
+            </div>
+            <div class="architecture-docs">
+                <a href="architecture.pdf" class="btn btn-outline" target="_blank">📄 View Full Architecture PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Section -->
+    <section id="quick-start" class="quick-start">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Quick Start</span>
+                <h2>Run the Pipeline</h2>
+                <p>Get started in 3 commands</p>
+            </div>
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-title">Terminal</span>
+                </div>
+                <pre><code># 1. Clone the repository
+<span class="code-cmd">git clone</span> https://github.com/SSrushti-s/Graphone_pipeline.git
+<span class="code-cmd">cd</span> Graphone_pipeline
+
+# 2. Install dependencies
+<span class="code-cmd">pip install</span> -r requirements.txt
+
+# 3. Run the full pipeline
+<span class="code-cmd">python main.py</span> --papers 1000 --news 200 --jobs 500 --startups 1002 --products 1000</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <span class="footer-brand">🧠 GraphOne Pipeline</span>
+                    <p class="footer-desc">AI Engineer / Data Intelligence Trial Assignment</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/SSrushti-s/Graphone_pipeline" target="_blank">GitHub</a>
+                    <a href="architecture.pdf" target="_blank">Architecture PDF</a>
+                    <a href="https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit?usp=sharing" target="_blank">Google Sheets</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Built with ❤️ for the AI Engineer / Data Intelligence Trial Assignment</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
